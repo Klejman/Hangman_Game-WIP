@@ -1,0 +1,61 @@
+html, body {
+	background-image: url("../images/westernBackgroundImg.jpeg");
+/*	opacity: 0.85;
+	filter: alpha(opacity= 85); /* For IE8 and earlier */
+	height: 115%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+body {
+	font-family: 'Rye', cursive;
+	/*font-weight: bold;*/
+	font-size: 92%;
+}
+
+
+#box-wrapper {
+	margin-top: 60px;
+}
+
+.hangman-img {
+	margin-left: 250px;
+}
+
+.jumbotron {
+   background: rgb(227, 246, 252); /* This is for ie8 and below */
+   background: rgba(227, 246, 252, 0.5); 
+}
+
+.gamePic {
+	background: rgba(227, 246, 252, 0.01);
+	width: 270px;
+	height: 320px;
+}
+
+.btn  {
+	margin-right: 50px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Rye', cursive;
+	font-size: 65px;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+.text-center {
+	margin-top: 20px;
+}
+
+/*button,
+h3,
+p, {
+font-family: 'Rye', cursive;
+}*/
+

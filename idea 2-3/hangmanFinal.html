@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!--responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--browser reset browser-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/normalize/7.0.0/normalize.css">
+		<!-- Bootstrap Cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/cssootstrap.min.css">
+		<!--my css style sheet-->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- jquery bootstrap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="music.js"></script>
+		<script src="untitled.js"></script>
+		<title>Hangman Game</title>
+	</head>
+	<body>
+	<script>
+	 function play(){
+	      var audio = document.getElementById("audio");
+	      audio.play();
+	                }
+	  </script>
+		<h1>Hangman<br>
+		</h1>
+		<div class="music">
+			<input class="on-button" type="button" value="MUSIC ON" onClick="play()">
+			<input class="pause-button" type="button" value="OFF" onClick="pause()">
+			<audio id="audio" src="music.js"></audio>
+		</div>
+		<p id="wordField"></p>
+		<form name="display">
+
+			<input name="entry" type="text" size="5" maxlength="1">
+			<input name="ratebutton" type="button" value="Guess" onClick="checkWord()">
+			<p id="wrongLetter">Wrong Letters:</p>
+			<input name="refresh" type="button" value="New Game" onClick="location.reload()">
+		</form>
+	</body>
+</html>
+

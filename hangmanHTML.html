@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--browser reset browser-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/normalize/7.0.0/normalize.css">
+        <!-- Bootstrap Cdn -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Google Font Western Styled in keeping with theme -->
+        <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Rye');
+        </style>
+        <!--my css style sheet-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- jquery bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- music -->
+        <script src="music.js"></script>
+        <!-- behavior of the page aka javaScript-->
+        <script src="hangman.js"></script>
+        <title>Old West Hangman</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron" id="box-wrapper">
+                <div class="container">
+                    <header>
+                        <h1>Hangman</h1>
+                        <div class="text-center">
+                            <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme</button>
+                            <button class="btn btn-info btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+                        </div>
+                        <h3>Guess away partner!</h3>
+                    </header>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3" id="game">
+                            <p>Wins: 0</p>
+                            <p>Losses: 0</p>
+                            <p>Guesses Left: 0</p>
+                            <p>Guesses so far: </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3" id="game2">
+                            <img class="gamePic" src="assets/images/wrongGuess-0.png"></img>
+                            <h3>Your word: 
+                            <p id="printOut"> </p>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
